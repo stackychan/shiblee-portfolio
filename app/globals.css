@@ -132,10 +132,12 @@ body {
 
 .animate-marquee {
   animation: marquee 25s linear infinite;
+  will-change: transform;
 }
 
 .animate-marquee-reverse {
   animation: marquee 25s linear infinite reverse;
+  will-change: transform;
 }
 
 /* Section animations */
@@ -208,4 +210,11 @@ body {
   transition:
     opacity 0.4s ease,
     transform 0.4s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
