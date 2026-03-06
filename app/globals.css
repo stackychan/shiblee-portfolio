@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #ffffff;
+  --bg-secondary: #f9fafb;
+  --bg-card: rgba(255, 255, 255, 0.9);
+  --border: rgba(0, 0, 0, 0.08);
+  --border-strong: rgba(0, 0, 0, 0.12);
+  --text: #111827;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+  --accent: #2563eb;
+  --accent-bg: rgba(37, 99, 235, 0.08);
+  --grid-color: rgba(0, 0, 0, 0.04);
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 48px rgba(0, 0, 0, 0.12);
+  --tag-bg: #ffffff;
+  --tag-text: #6b7280;
+}
+
+.dark {
+  --bg: #000000;
+  --bg-secondary: #0a0a0a;
+  --bg-card: rgba(10, 10, 10, 0.9);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.15);
+  --text: #ffffff;
+  --text-secondary: #93c5fd;
+  --text-muted: #9ca3af;
+  --accent: #60a5fa;
+  --accent-bg: rgba(96, 165, 250, 0.1);
+  --grid-color: rgba(255, 255, 255, 0.025);
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 48px rgba(0, 0, 0, 0.6);
+  --tag-bg: #18181b;
+  --tag-text: #9ca3af;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+
+/* Grid background */
+.grid-bg {
+  background-image:
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Hero card animation */
+@keyframes cardIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes nameIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulseDot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-card-in {
+  animation: cardIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.1s forwards;
+}
+
+.animate-name-in {
+  animation: nameIn 0.5s ease 0.5s forwards;
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.6s ease 1.2s forwards;
+}
+
+.animate-pulse-dot {
+  animation: pulseDot 2s infinite;
+}
+
+.animate-scroll-down {
+  animation: scrollDown 1.5s ease infinite;
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee-reverse {
+  animation: marquee 25s linear infinite reverse;
+}
+
+/* Section animations */
+.section-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.5s,
+    transform 0.5s;
+}
+
+.section-animate.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.section-label-animate {
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity 0.5s,
+    transform 0.5s;
+}
+
+.section-label-animate.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.card-animate {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.5s,
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card-animate.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.exp-animate {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition:
+    opacity 0.5s,
+    transform 0.5s;
+}
+
+.exp-animate.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.contact-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.6s,
+    transform 0.6s;
+}
+
+.contact-animate.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.rotating-word {
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+}
