@@ -38,7 +38,7 @@ export default function HeroSection() {
   const { dark, toggleTheme } = useTheme();
   const [clock, setClock] = useState("");
 
-  const rotatingWords = ["WebApps", "Frontend", "Backend"];
+  const rotatingWords = ["Websites", "Interfaces", "Experiences"];
   const [wordIndex, setWordIndex] = useState(0);
   const [visible, setVisible] = useState(true);
 
@@ -172,9 +172,9 @@ export default function HeroSection() {
               className="mt-3 text-base leading-relaxed max-w-2xl"
               style={{ color: "var(--text-secondary)" }}
             >
-              An architect-minded developer who ships fast, transforms legacy
-              UIs into premium digital experiences, and obsesses over the
-              details that make software truly enjoyable.
+              A passionate frontend developer focused on crafting clean, responsive, 
+              and user-friendly websites. I love learning modern web technologies, 
+              solving interesting problems, and bringing creative interfaces to life.
             </p>
           </div>
 

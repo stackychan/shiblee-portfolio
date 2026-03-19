@@ -23,7 +23,7 @@ const dmMono = DM_Mono({
 export const metadata: Metadata = {
   title: "Shiblee Showkat",
   description:
-    "I'm Shiblee Showkat. I'm an Independent Web Developer & Architect from Kashmir, India.",
+    "I'm Shiblee Showkat. I'm a passionate Frontend Developer learning modern web technologies from Kashmir, India.",
   icons: {
     icon: "/logo.png",
     apple: "/logo.png",
