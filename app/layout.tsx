@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   description:
     "I'm Shiblee Showkat. I'm an Independent Web Developer & Architect from Kashmir, India.",
   icons: {
-    icon: "/cat.png",
-    apple: "/cat.png",
+    icon: "/logo.png",
+    apple: "/logo.png",
   },
 };
 

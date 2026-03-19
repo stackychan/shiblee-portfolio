@@ -106,7 +106,7 @@ export default function HeroSection() {
                 style={{ borderColor: "var(--border)" }}
               >
                 <Image
-                  src="/cat.png"
+                  src="/logo.png"
                   alt="Shiblee Showkat"
                   width={72}
                   height={72}
