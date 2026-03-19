@@ -46,40 +46,56 @@ function ProjectCard({
         >
           {project.title}
         </h3>
-        <p className="text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>
+        <p
+          className="text-sm leading-relaxed"
+          style={{ color: "var(--text-muted)" }}
+        >
           {project.description}
         </p>
       </div>
 
       {/* Footer */}
       <div className="px-5 pb-5">
-        <a
-          href={project.repoUrl}
-          target="_blank"
-          rel="noopener"
-          className="block w-full py-2.5 rounded-[0.85rem] text-center text-xs font-bold tracking-[0.1em] uppercase transition-all hover:opacity-85 active:scale-[0.98]"
-          style={{
-            background: "var(--text)",
-            color: "var(--bg)",
-          }}
-        >
-          View Repository
-        </a>
+        {project.liveUrl ? (
+          <a
+            href={project.liveUrl}
+            target="_blank"
+            rel="noopener"
+            className="block w-full py-2.5 rounded-[0.85rem] text-center text-xs font-bold tracking-[0.1em] uppercase transition-all hover:opacity-85 active:scale-[0.98]"
+            style={{
+              background: "var(--text)",
+              color: "var(--bg)",
+            }}
+          >
+            View
+          </a>
+        ) : (
+          <a
+            href={project.repoUrl}
+            target="_blank"
+            rel="noopener"
+            className="block w-full py-2.5 rounded-[0.85rem] text-center text-xs font-bold tracking-[0.1em] uppercase transition-all hover:opacity-85 active:scale-[0.98]"
+            style={{
+              background: "var(--text)",
+              color: "var(--bg)",
+            }}
+          >
+            View Repository
+          </a>
+        )}
       </div>
     </div>
   );
 }
 
 export default function ProjectsSection() {
-  const { ref: headerRef, isVisible: headerVisible } = useIntersectionObserver();
+  const { ref: headerRef, isVisible: headerVisible } =
+    useIntersectionObserver();
 
   return (
     <section id="projects" className="grid-bg relative py-24">
       <div className="max-w-6xl mx-auto px-6">
-        <div
-          ref={headerRef}
-          className={headerVisible ? "visible" : ""}
-        >
+        <div ref={headerRef} className={headerVisible ? "visible" : ""}>
           <span
             className={`section-label-animate inline-block px-4 py-1.5 rounded-full text-[0.7rem] font-bold tracking-[0.15em] uppercase mb-4 ${
               headerVisible ? "visible" : ""

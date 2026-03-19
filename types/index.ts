@@ -13,6 +13,7 @@ export interface Project {
   thumbText: string;
   badge?: string;
   repoUrl: string;
+  liveUrl?: string;
 }
 
 export interface Experience {

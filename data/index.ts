@@ -93,6 +93,7 @@ export const projects: Project[] = [
     thumbText: "TERRA COLLECTIVE",
     badge: "1ST PLACE • HACKATHON",
     repoUrl: "https://github.com/stackychan/greenconf",
+    liveUrl: "https://terracollective.vercel.app/",
   },
   {
     id: "nova",
@@ -106,6 +107,7 @@ export const projects: Project[] = [
     },
     thumbText: "NOVA",
     repoUrl: "https://github.com/stackychan/nova-portfolio",
+    liveUrl: "https://nova-studio1.vercel.app/",
   },
 ];
 
