@@ -79,6 +79,7 @@ export const projects: Project[] = [
     },
     thumbText: "CINEVAULT",
     repoUrl: "https://github.com/stackychan/cinevault",
+    liveUrl: "#",
   },
   {
     id: "terra",
