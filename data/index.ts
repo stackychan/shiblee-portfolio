@@ -92,7 +92,7 @@ export const projects: Project[] = [
       background: "linear-gradient(135deg,#e8eaf6,#c5cae9)",
       color: "#1a237e",
     },
-    thumbText: "ACADEX",
+    thumbText: "KCET ACADEX",
     badge: "1ST PLACE • SYNERTECH 2026",
     repoUrl: "https://github.com/stackychan/acadex",
     liveUrl: "https://acadex.vercel.app",
