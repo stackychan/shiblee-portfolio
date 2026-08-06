@@ -265,7 +265,7 @@ export default function HeroSection() {
           </div>
 
           {/* Bottom row */}
-          <div className="flex items-center justify-between flex-wrap gap-4">
+          <div className="flex items-center justify-between gap-4">
             <a
               href="/resume.pdf"
               target="_blank"
