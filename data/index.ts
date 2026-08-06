@@ -87,7 +87,7 @@ export const projects: Project[] = [
     title: "Academic Portal",
     subtitle: "KCET ACADEX",
     description:
-      "Client-side academic portal for Kashmir College of Engineering and Technology. Features multi-role auth, attendance tracking, assignment management, leave approvals, and notice boards — built with React, Vite, TypeScript & Supabase.",
+      "Client-side academic portal for Kashmir College of Engineering and Technology. Features multi-role auth, attendance tracking, assignment management, leave approvals, and notice boards.",
     thumbStyle: {
       background: "linear-gradient(135deg,#e8eaf6,#c5cae9)",
       color: "#1a237e",
