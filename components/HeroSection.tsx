@@ -243,7 +243,7 @@ export default function HeroSection() {
             </a>
             {/* LinkedIn */}
             <a
-              href="https://www.linkedin.com/in/shibleeshowkat"
+              href="https://www.linkedin.com/in/shiblee-showkat"
               target="_blank"
               rel="noopener"
               title="LinkedIn"
