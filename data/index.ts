@@ -78,7 +78,7 @@ export const projects: Project[] = [
       color: "#1b4332",
     },
     thumbText: "TERRA COLLECTIVE",
-    badge: "1ST PLACE • FOSS HACKATHON 2025",
+    badge: "1ST PLACE • FOSS OPEN BUILD 2025",
     repoUrl: "https://github.com/stackychan/greenconf",
     liveUrl: "https://terracollective.vercel.app/",
   },
