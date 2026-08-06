@@ -37,6 +37,7 @@ const MoonIcon = () => (
 export default function HeroSection() {
   const { dark, toggleTheme } = useTheme();
   const [clock, setClock] = useState("");
+  const [clockShort, setClockShort] = useState("");
 
   const rotatingWords = ["WebApps", "Frontend", "Backend"];
   const [wordIndex, setWordIndex] = useState(0);
@@ -44,14 +45,24 @@ export default function HeroSection() {
 
   useEffect(() => {
     const update = () => {
+      const now = new Date();
       setClock(
-        new Date().toLocaleString("en-US", {
+        now.toLocaleString("en-US", {
           month: "2-digit",
           day: "2-digit",
           year: "numeric",
           hour: "2-digit",
           minute: "2-digit",
           second: "2-digit",
+        }),
+      );
+      setClockShort(
+        now.toLocaleString("en-US", {
+          month: "2-digit",
+          day: "2-digit",
+          year: "numeric",
+          hour: "2-digit",
+          minute: "2-digit",
         }),
       );
     };
@@ -297,7 +308,13 @@ export default function HeroSection() {
 
             <div className="flex flex-col items-end gap-1">
               <span
-                className="font-mono text-[0.55rem] md:text-[0.7rem] opacity-70"
+                className="font-mono text-[0.7rem] opacity-70 md:hidden"
+                style={{ color: "var(--text-muted)" }}
+              >
+                {clockShort}
+              </span>
+              <span
+                className="font-mono text-[0.7rem] opacity-70 hidden md:block"
                 style={{ color: "var(--text-muted)" }}
               >
                 {clock}
