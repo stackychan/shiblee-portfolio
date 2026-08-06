@@ -267,7 +267,7 @@ export default function HeroSection() {
           {/* Bottom row */}
           <div className="flex items-center justify-between flex-wrap gap-4">
             <a
-              href="https://drive.google.com/file/d/1y6heS0XJw7P_c8AFJfTIqsTpT1GBs8Wn/view?usp=drive_link"
+              href="/resume.pdf"
               target="_blank"
               rel="noopener"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl font-semibold text-sm transition-all hover:opacity-90 active:scale-95"
