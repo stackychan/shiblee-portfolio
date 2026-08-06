@@ -163,9 +163,8 @@ export default function HeroSection() {
                   display: "inline-block",
                 }}
               >
-                {rotatingWords[wordIndex]}
+                {rotatingWords[wordIndex]}.
               </em>
-              .
             </h2>
 
             <p
