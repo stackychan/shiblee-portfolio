@@ -51,6 +51,7 @@ export default function HeroSection() {
           year: "numeric",
           hour: "2-digit",
           minute: "2-digit",
+          second: "2-digit",
         }),
       );
     };
@@ -296,7 +297,7 @@ export default function HeroSection() {
 
             <div className="flex flex-col items-end gap-1">
               <span
-                className="font-mono text-[0.7rem] opacity-70"
+                className="font-mono text-[0.55rem] md:text-[0.7rem] opacity-70"
                 style={{ color: "var(--text-muted)" }}
               >
                 {clock}
