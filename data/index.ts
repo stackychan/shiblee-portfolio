@@ -95,7 +95,7 @@ export const projects: Project[] = [
     thumbText: "KCET ACADEX",
     badge: "1ST PLACE • SYNERTECH 2026",
     repoUrl: "https://github.com/stackychan/acadex",
-    liveUrl: "https://acadex.vercel.app",
+    liveUrl: "https://acadex-kcet.vercel.app/",
   },
   {
     id: "priceraptor",
