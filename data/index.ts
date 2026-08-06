@@ -68,47 +68,48 @@ export const techRow2: TechItem[] = [
 
 export const projects: Project[] = [
   {
-    id: "cinevault",
-    title: "Netflix Architecture",
-    subtitle: "CINEVAULT",
-    description:
-      "Dynamic video streaming UI featuring responsive media carousels, TMDB API integration, and immersive trailer modals.",
-    thumbStyle: {
-      background: "linear-gradient(135deg,#fce4ec,#f8bbd9)",
-      color: "#3d1a29",
-    },
-    thumbText: "CINEVAULT",
-    repoUrl: "https://github.com/stackychan/cinevault",
-    liveUrl: "#",
-  },
-  {
     id: "terra",
     title: "Eco-Marketplace",
     subtitle: "TERRA COLLECTIVE",
     description:
-      "Sustainable multi-vendor e-commerce platform built by Team Stack Battalion.",
+      "Sustainable multi-vendor e-commerce marketplace allowing sellers to exclusively list eco-friendly products. Built by Team Stack Battalion at FOSS Hackathon 2025.",
     thumbStyle: {
       background: "linear-gradient(135deg,#e0f2e9,#b2dfdb)",
       color: "#1b4332",
     },
     thumbText: "TERRA COLLECTIVE",
-    badge: "1ST PLACE • HACKATHON",
+    badge: "1ST PLACE • FOSS HACKATHON 2025",
     repoUrl: "https://github.com/stackychan/greenconf",
     liveUrl: "https://terracollective.vercel.app/",
   },
   {
-    id: "nova",
-    title: "Interactive Studio",
-    subtitle: "NOVA",
+    id: "acadex",
+    title: "Academic Portal",
+    subtitle: "KCET ACADEX",
     description:
-      "High-performance animated portfolio with custom DOM events and smooth scroll features.",
+      "Client-side academic portal for Kashmir College of Engineering and Technology. Features multi-role auth, attendance tracking, assignment management, leave approvals, and notice boards — built with React, Vite, TypeScript & Supabase.",
     thumbStyle: {
-      background: "linear-gradient(135deg,#f0f0f0,#e0e0e0)",
-      color: "#1a1a2e",
+      background: "linear-gradient(135deg,#e8eaf6,#c5cae9)",
+      color: "#1a237e",
     },
-    thumbText: "NOVA",
-    repoUrl: "https://github.com/stackychan/nova-portfolio",
-    liveUrl: "https://nova-studio1.vercel.app/",
+    thumbText: "ACADEX",
+    badge: "1ST PLACE • KCET HACKATHON 2026",
+    repoUrl: "https://github.com/stackychan/acadex",
+    liveUrl: "https://acadex.vercel.app",
+  },
+  {
+    id: "priceraptor",
+    title: "Price Tracker",
+    subtitle: "PRICE RAPTOR",
+    description:
+      "Scalable price tracking web app that monitors, normalizes, and compares product data across Amazon, Flipkart, and Croma. Features interactive Recharts visualizations for historical price trends.",
+    thumbStyle: {
+      background: "linear-gradient(135deg,#fff8e1,#ffecb3)",
+      color: "#4a2c00",
+    },
+    thumbText: "PRICE RAPTOR",
+    repoUrl: "https://github.com/stackychan/priceraptor",
+    liveUrl: "#",
   },
 ];
 
