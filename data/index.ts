@@ -72,7 +72,7 @@ export const projects: Project[] = [
     title: "Eco-Marketplace",
     subtitle: "TERRA COLLECTIVE",
     description:
-      "Sustainable multi-vendor e-commerce marketplace allowing sellers to exclusively list eco-friendly products. Built by Team Stack Battalion at FOSS Hackathon 2025.",
+      "Sustainable multi-vendor e-commerce marketplace allowing sellers to exclusively list eco-friendly products. Built by Team Stack Battalion at FOSS Open Build 2025, NIT Srinagar.",
     thumbStyle: {
       background: "linear-gradient(135deg,#e0f2e9,#b2dfdb)",
       color: "#1b4332",
